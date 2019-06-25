@@ -12,7 +12,7 @@ Lit-Element & Lit-HTML are my new go-to ways to build websites. Why? They’re s
 
 ### Firing a custom event
 
-```
+```js
 class MyElement extends LitElement {
   render() {
     return html`<div>Hello World</div>`;
