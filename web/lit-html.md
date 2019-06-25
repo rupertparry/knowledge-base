@@ -8,3 +8,24 @@ Lit-Element & Lit-HTML are my new go-to ways to build websites. Why? They’re s
 
 - https://lit-element.polymer-project.org/guide/styles
 
+## Useful Snippets
+
+### Firing a custom event
+
+```
+class MyElement extends LitElement {
+  render() {
+    return html`<div>Hello World</div>`;
+  }
+  firstUpdated(changedProperties) {
+    let event = new CustomEvent('my-event', {
+      detail: {
+        message: 'Something important happened'
+      }
+    });
+    this.dispatchEvent(event);
+  }
+}
+```
+
+
