@@ -28,4 +28,9 @@ class MyElement extends LitElement {
 }
 ```
 
+You can then listen to this event using the `@` attribute:
 
+```js
+function myListener() { /* ... */ }
+html`<my-element @my-event=${myListener}></my-element>`;
+```
